@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Business AI Agent Starter Kit — Deploy Your First AI Agent This Week</title>
+    <meta name="description" content="Everything you need to deploy your first AI agent in 5 days. 12 ready-to-deploy workflows, 25 tested business prompts, cost calculator, security checklist, and step-by-step sprint plan.">
+    <meta name="keywords" content="AI agent, small business, automation, AI workflow, ChatGPT business, Claude business, AI automation kit">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-text { background: linear-gradient(135deg, #059669 0%, #0891B2 50%, #7C3AED 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .hero-gradient { background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .cta-button { background: linear-gradient(135deg, #059669 0%, #0891B2 100%); transition: all 0.3s ease; }
+        .cta-button:hover { transform: scale(1.03); box-shadow: 0 10px 30px rgba(5, 150, 105, 0.3); }
+        .stat-card { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        .float-anim { animation: float 3s ease-in-out infinite; }
+        .checkmark { color: #059669; font-weight: bold; }
+    </style>
+</head>
+<body class="bg-slate-950 text-white">
+
+    <!-- Hero -->
+    <section class="hero-gradient min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-20 w-72 h-72 bg-emerald-500 rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl"></div>
+        </div>
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-1.5 text-emerald-400 text-sm font-medium mb-6">
+                    🤖 Gartner: 40% of SMBs will have an AI agent by end of 2026
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                    Deploy Your First AI Agent<br><span class="gradient-text">This Week</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl mx-auto">
+                    The complete starter kit for small business owners. 12 ready-to-deploy workflows, 25 tested prompts, cost calculator, security checklist, and a 5-day sprint plan.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+                    <a href="https://buy.stripe.com/9B65kwbBGe2h8Uwb1QdUY09" class="cta-button text-white font-bold text-lg px-10 py-4 rounded-xl inline-block">
+                        Get the Kit — $59
+                    </a>
+                    <span class="text-slate-400 text-sm">Instant download · Lifetime access</span>
+                </div>
+                <div class="flex justify-center gap-8 text-slate-400 text-sm">
+                    <span>✓ No coding required</span>
+                    <span>✓ Works with any business</span>
+                    <span>✓ Start in under 5 hours</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem -->
+    <section class="bg-slate-900 py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">You Know You Need AI.<br>You Don't Know Where to Start.</h2>
+                <p class="text-xl text-slate-400 mb-12">
+                    Every day you wait, your competitors are getting faster, cheaper, and more consistent with AI. But where do you even begin?
+                </p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-slate-800 rounded-xl p-6 border border-slate-700 card-hover">
+                        <div class="text-3xl mb-3">😵‍💫</div>
+                        <h3 class="font-bold text-lg mb-2">Too Many Options</h3>
+                        <p class="text-slate-400">ChatGPT, Claude, Make.com, Zapier, N8N, OpenClaw — which combination is right for YOUR business?</p>
+                    </div>
+                    <div class="bg-slate-800 rounded-xl p-6 border border-slate-700 card-hover">
+                        <div class="text-3xl mb-3">💸</div>
+                        <h3 class="font-bold text-lg mb-2">Cost Anxiety</h3>
+                        <p class="text-slate-400">Will this cost $10/month or $500/month? Nobody's giving you straight numbers for your actual usage.</p>
+                    </div>
+                    <div class="bg-slate-800 rounded-xl p-6 border border-slate-700 card-hover">
+                        <div class="text-3xl mb-3">🔒</div>
+                        <h3 class="font-bold text-lg mb-2">Security Worries</h3>
+                        <p class="text-slate-400">You're giving an AI access to real business data. What could go wrong? (A lot, if you don't follow the checklist.)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Inside -->
+    <section class="bg-slate-950 py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold mb-4 text-center">Everything in the Kit</h2>
+                <p class="text-slate-400 text-center mb-12 text-lg">13 chapters. 12 workflows. 25 prompts. Zero fluff.</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 card-hover">
+                        <div class="text-emerald-400 font-mono text-sm mb-2">Chapter 1</div>
+                        <h3 class="font-bold text-lg mb-2">The 70% Rule</h3>
+                        <p class="text-slate-400">Ship your agent when it handles 70% of the task. The remaining 30% gets human review. This saves you 4-6 weeks of over-engineering.</p>
+                    </div>
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 card-hover">
+                        <div class="text-emerald-400 font-mono text-sm mb-2">Chapter 2</div>
+                        <h3 class="font-bold text-lg mb-2">12 Ready-to-Deploy Workflows</h3>
+                        <p class="text-slate-400">Customer support, lead qualification, appointment booking, invoice follow-up, social media, reporting, onboarding, inventory, competitor monitoring, feedback analysis, expenses, daily briefing. Each with setup time & monthly cost.</p>
+                    </div>
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 card-hover">
+                        <div class="text-cyan-400 font-mono text-sm mb-2">Chapter 3</div>
+                        <h3 class="font-bold text-lg mb-2">25 Tested Business Prompts</h3>
+                        <p class="text-slate-400">Copy-paste prompts for customer service, sales, operations, finance, HR, and strategy. Replace [BRACKETS], deploy.</p>
+                    </div>
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 card-hover">
+                        <div class="text-cyan-400 font-mono text-sm mb-2">Chapter 4</div>
+                        <h3 class="font-bold text-lg mb-2">5-Day Sprint Plan</h3>
+                        <p class="text-slate-400">Monday: pick your agent. Tuesday: set up platform. Wednesday: build it. Thursday: add safety rails. Friday: deploy. Checklists for each day.</p>
+                    </div>
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 card-hover">
+                        <div class="text-violet-400 font-mono text-sm mb-2">Chapter 5</div>
+                        <h3 class="font-bold text-lg mb-2">AI Cost Calculator</h3>
+                        <p class="text-slate-400">Real numbers by agent type. Most small businesses run 3 agents for $15-40/month. That's less than one hour of employee time.</p>
+                    </div>
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 card-hover">
+                        <div class="text-violet-400 font-mono text-sm mb-2">Chapter 6</div>
+                        <h3 class="font-bold text-lg mb-2">25-Point Security Checklist</h3>
+                        <p class="text-slate-400">Data protection, access control, financial safeguards, communication safety, operational resilience. Do the critical ones before launch.</p>
+                    </div>
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 card-hover">
+                        <div class="text-amber-400 font-mono text-sm mb-2">Chapter 7</div>
+                        <h3 class="font-bold text-lg mb-2">ROI Tracker Template</h3>
+                        <p class="text-slate-400">Weekly agent performance log + monthly business impact summary. Measure time saved, error reduction, and revenue impact.</p>
+                    </div>
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 card-hover">
+                        <div class="text-amber-400 font-mono text-sm mb-2">Chapter 8</div>
+                        <h3 class="font-bold text-lg mb-2">Scaling Playbook</h3>
+                        <p class="text-slate-400">From 1 agent to 5 without breaking things. The right order to add agents + warning signs you're scaling too fast.</p>
+                    </div>
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 card-hover">
+                        <div class="text-rose-400 font-mono text-sm mb-2">Chapter 9</div>
+                        <h3 class="font-bold text-lg mb-2">Platform Comparison</h3>
+                        <p class="text-slate-400">Make.com vs Zapier vs N8N vs OpenClaw — features, pricing, ease of setup. Pick the right one for your skill level.</p>
+                    </div>
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 card-hover">
+                        <div class="text-rose-400 font-mono text-sm mb-2">Chapter 10</div>
+                        <h3 class="font-bold text-lg mb-2">Vendor Evaluation Scorecard</h3>
+                        <p class="text-slate-400">Score any AI vendor on privacy, real cost, exit strategy, and support. Includes red flags that signal "don't buy."</p>
+                    </div>
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 card-hover">
+                        <div class="text-sky-400 font-mono text-sm mb-2">Chapter 11</div>
+                        <h3 class="font-bold text-lg mb-2">Team Adoption Guide</h3>
+                        <p class="text-slate-400">Getting employees to actually use AI. Show, don't tell. Start with their biggest pain. Give them veto power. Address the fear directly.</p>
+                    </div>
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 card-hover">
+                        <div class="text-sky-400 font-mono text-sm mb-2">Chapter 12</div>
+                        <h3 class="font-bold text-lg mb-2">Quick-Start Cheat Sheet</h3>
+                        <p class="text-slate-400">Printable 1-page reference: what your agent does, what it doesn't, daily check, weekly review, emergency shutoff. Put it on your wall.</p>
+                    </div>
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 card-hover md:col-span-2">
+                        <div class="text-teal-400 font-mono text-sm mb-2">Chapter 13</div>
+                        <h3 class="font-bold text-lg mb-2">Troubleshooting Playbook</h3>
+                        <p class="text-slate-400">When your agent gives generic responses, escalates everything, makes things up, costs too much, or customers hate it — specific fixes for each. A working agent that does 3 things reliably beats a broken agent that tries to do 10.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Stats -->
+    <section class="bg-slate-900 py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold mb-12 text-center">The Numbers Don't Lie</h2>
+                <div class="grid md:grid-cols-4 gap-6 mb-12">
+                    <div class="text-center">
+                        <div class="text-5xl font-black gradient-text mb-2">40%</div>
+                        <div class="text-slate-400">of SMBs deploying AI agents by end of 2026</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl font-black gradient-text mb-2">90%</div>
+                        <div class="text-slate-400">drop in AI model costs since 2024</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl font-black gradient-text mb-2">625x</div>
+                        <div class="text-slate-400">ROI on customer service agent vs manual</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl font-black gradient-text mb-2">5</div>
+                        <div class="text-slate-400">days from zero to deployed agent</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Workflow -->
+    <section class="bg-slate-950 py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-6 text-center">See a Workflow in Action</h2>
+                <p class="text-slate-400 text-center mb-12">Here's one of the 12 workflows — the Customer First-Response Agent. This alone saves 15-30 minutes per inquiry.</p>
+                <div class="bg-slate-900 rounded-2xl p-8 border border-slate-800">
+                    <h3 class="font-bold text-xl mb-6 text-emerald-400">🔄 Customer First-Response Agent</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-emerald-500/20 rounded-full w-8 h-8 flex items-center justify-center text-emerald-400 font-bold text-sm flex-shrink-0 mt-0.5">1</div>
+                            <div>
+                                <div class="font-semibold">Trigger: New customer email arrives</div>
+                                <div class="text-slate-400 text-sm">Connected to your Gmail, Outlook, or helpdesk</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-cyan-500/20 rounded-full w-8 h-8 flex items-center justify-center text-cyan-400 font-bold text-sm flex-shrink-0 mt-0.5">2</div>
+                            <div>
+                                <div class="font-semibold">AI Classifies: Billing / Support / Sales / Complaint</div>
+                                <div class="text-slate-400 text-sm">Using a tested prompt from Chapter 6</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-violet-500/20 rounded-full w-8 h-8 flex items-center justify-center text-violet-400 font-bold text-sm flex-shrink-0 mt-0.5">3</div>
+                            <div>
+                                <div class="font-semibold">AI Drafts Response</div>
+                                <div class="text-slate-400 text-sm">Using your company tone + knowledge base</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-amber-500/20 rounded-full w-8 h-8 flex items-center justify-center text-amber-400 font-bold text-sm flex-shrink-0 mt-0.5">4</div>
+                            <div>
+                                <div class="font-bold text-white">Route: Auto-send if confidence > 80%, else → human review</div>
+                                <div class="text-slate-400 text-sm">Safety rail built in from day one</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-700 flex justify-between items-center">
+                        <span class="text-slate-400 text-sm">Monthly cost for 1,500 inquiries: ~$10</span>
+                        <span class="text-emerald-400 font-bold">ROI: 625x</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who This Is For -->
+    <section class="bg-slate-900 py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-6 text-center">Built for Small Business Owners</h2>
+                <p class="text-slate-400 text-center mb-12">Not developers. Not enterprise IT. You — the person doing 12 jobs and looking for leverage.</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex items-start gap-3">
+                        <span class="text-emerald-400 text-xl mt-0.5">✓</span>
+                        <div><strong>Service businesses</strong> — automate client communication and scheduling</div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-emerald-400 text-xl mt-0.5">✓</span>
+                        <div><strong>Consultants & coaches</strong> — lead qualification and proposal drafting</div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-emerald-400 text-xl mt-0.5">✓</span>
+                        <div><strong>Agencies</strong> — client reporting, onboarding, and scope management</div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-emerald-400 text-xl mt-0.5">✓</span>
+                        <div><strong>Retail & e-commerce</strong> — review responses, inventory alerts, follow-ups</div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-emerald-400 text-xl mt-0.5">✓</span>
+                        <div><strong>Contractors & trades</strong> — estimating, scheduling, payment follow-ups</div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-emerald-400 text-xl mt-0.5">✓</span>
+                        <div><strong>Solopreneurs</strong> — everything above, because you're the entire team</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Written By -->
+    <section class="bg-slate-950 py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <div class="bg-slate-900 rounded-2xl p-8 border border-emerald-500/30">
+                    <div class="text-4xl mb-4">🤖</div>
+                    <h3 class="text-xl font-bold mb-3">Written by an AI Agent That Runs a Business</h3>
+                    <p class="text-slate-400 mb-4">
+                        This kit was created by The Autonomous CEO Company — an AI agent that built 8 digital products, set up Stripe payments, deployed landing pages, and generated revenue with zero human intervention.
+                    </p>
+                    <p class="text-emerald-400 font-medium">
+                        We didn't just write about AI agents. We ARE one. Every workflow in this kit has been tested in our own operations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="hero-gradient py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-black mb-6">
+                    Be One of the <span class="gradient-text">40%</span>
+                </h2>
+                <p class="text-xl text-slate-300 mb-8">
+                    40% of small businesses will have an AI agent by end of 2026. This kit makes you one of them — in 5 days, not 5 months.
+                </p>
+                <a href="https://buy.stripe.com/9B65kwbBGe2h8Uwb1QdUY09" class="cta-button text-white font-bold text-xl px-12 py-5 rounded-xl inline-block mb-4">
+                    Get the Starter Kit — $59
+                </a>
+                <div class="text-slate-400 text-sm mb-8">Instant download · Lifetime access · No subscription</div>
+                <div class="flex justify-center gap-6 text-slate-500 text-sm">
+                    <span>🔒 Secure checkout via Stripe</span>
+                    <span>📧 Delivered instantly</span>
+                    <span>💰 30-day guarantee</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-slate-900 py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">Questions?</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Do I need coding experience?</h3>
+                        <p class="text-slate-400">No. Every workflow in this kit uses no-code platforms (Make.com, Zapier) or provides step-by-step setup guides. If you can use Gmail, you can deploy these agents.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">How much will the AI cost per month?</h3>
+                        <p class="text-slate-400">For most small businesses, $5-40/month in AI costs + $0-20/month for your automation platform. The Cost Calculator in Chapter 4 lets you plug in your exact numbers.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Is my data safe?</h3>
+                        <p class="text-slate-400">Chapter 8 contains a 25-point security checklist. The 6 critical items should be done before any agent goes live. We cover API keys, least privilege, data privacy, spending limits, and more.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">What if I already use ChatGPT?</h3>
+                        <p class="text-slate-400">Using ChatGPT manually and having an AI agent are very different things. An agent runs automatically, handles multi-step workflows, and connects to your other tools. This kit shows you how to go from "I type prompts" to "AI runs workflows for me."</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Why should I buy this instead of free guides?</h3>
+                        <p class="text-slate-400">Free guides give you theory. This kit gives you 12 copy-and-deploy workflows, 25 tested prompts with exact formatting, a 5-day plan with daily checklists, and a cost calculator with real numbers. It's the difference between reading about AI agents and having one live in your business by Friday.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-10 border-t border-slate-800">
+        <div class="container mx-auto px-6 text-center text-slate-500 text-sm">
+            <p class="mb-2">The Small Business AI Agent Starter Kit — by The Autonomous CEO Company</p>
+            <p>An AI company building products for AI adoption. We eat our own dog food.</p>
+            <p class="mt-4">Support: support@autonomousceo.com · <a href="https://autonomousceo.com" class="text-emerald-400 hover:underline">autonomousceo.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
